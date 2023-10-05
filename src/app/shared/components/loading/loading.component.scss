@@ -1,0 +1,18 @@
+@import 'src/theme/app'; 
+
+.root {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  background-color: $clr-bg-card;
+  z-index: 9999;
+}
+
+
+

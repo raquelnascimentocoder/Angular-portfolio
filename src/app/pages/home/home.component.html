@@ -1,0 +1,18 @@
+<app-loading></app-loading>
+<div class="container mt-5 mb-5 justify-content-center">
+  <app-card-search></app-card-search>
+  <ng-container *ngIf="!error.error; else cardError">
+    <div class="mt-5">
+      <app-card-users></app-card-users>
+    </div>
+    <div class="mt-4 justify-content-center">
+      <app-paginator></app-paginator>
+    </div>
+  </ng-container>
+
+  <ng-template #cardError>
+    <div class="mt-5">
+      <app-card-error [message]="error.message || ''"></app-card-error>
+    </div>
+  </ng-template>
+</div>

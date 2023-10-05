@@ -1,0 +1,73 @@
+@import 'src/theme/app';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+body {
+ background: linear-gradient(180deg, rgba(1,0,18,1) 24%, rgba(53,80,148,1) 46%, rgba(37,1,62,1) 59%, rgba(231,0,255,1) 92%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+body {
+  margin: 0;
+  font-family: $font-family;
+  overflow-x: hidden;
+
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*Medias queries */
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+
+body::-webkit-scrollbar {
+  width: 5px;               
+}
+
+body::-webkit-scrollbar-track {
+  background: $clr-primary;       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $clr-pink;      
+}
